@@ -3,8 +3,5 @@ function _main(){
     $x = 5;
     $name = "Elliot";
     echo "$name has $x dollars";
-    return $x;
 }
-
-echo "<br>";
-echo _main();
+_main();
