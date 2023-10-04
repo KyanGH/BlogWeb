@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     echo "<br>";
     echo $animal;
 
-    header("Location: ../form.php");
+    //header("Location: ../form.php");
 }
 else{
     header("Location: ../index.html");
