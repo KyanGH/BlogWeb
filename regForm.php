@@ -22,12 +22,6 @@
         <label for="age">Age:</label>
         <input type="number" id="age" name="age" required><br><br>
 
-        <label for="sex">Gender:</label>
-        <select id="sex" name="sex" required>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select><br><br>
-
         <label for="car_plate">Car Plate Number:</label>
         <input type="text" id="car_plate" name="car_plate" required><br><br>
 
