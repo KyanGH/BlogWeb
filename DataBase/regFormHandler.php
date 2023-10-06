@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     elseif ($password != $confirm_password) {
         echo "Password and Confirm Password do not match.";
         echo "<br>";
+        //header("Location: ../regForm.php");
     } else {
         echo $firstname . " " . $lastname . " registration information are:";
         echo "<br>";
