@@ -1,0 +1,46 @@
+/* Styles for the calculator form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="number"],
+select,
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #0074cc;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056a9;
+}
+
+/* Styling for the form title */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
