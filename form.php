@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>What's Your Favorite Animal?</h1>
-    <form action="DataBase/formhandler.php" method="post">
+    <form action="phpHandlers/formhandler.php" method="post">
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" placeholder="Firstname..." required><br><br>
 

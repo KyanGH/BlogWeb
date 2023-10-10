@@ -1,0 +1,12 @@
+INSERT INTO users (user_name, first_name, last_name, pwd, email, phone)
+VALUES ('Dusk','Kyan','Azaizeh','blackdusk','dusk@gmail.com',1234567890);
+
+
+INSERT INTO comments (user_name, comment_txt, users_id)
+VALUES ('Dusk','Hello world!', 1);
+
+
+ SELECT * FROM users LEFT JOIN comments ON users.id = comments.users_id;
+
+
+SELECT users.id, users.user_name, comments.comment_txt  FROM users RIGHT JOIN comments ON users.id = comments.users_id;
