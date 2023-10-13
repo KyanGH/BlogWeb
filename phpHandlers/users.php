@@ -25,11 +25,4 @@ function _main(){
     echo "<br>";
     echo $_SERVER['SCRIPT_NAME'];
 }
-
-function _loginUser($name, $password){
-    if($name == "Elliot" && $password == "123"){
-        echo "User $name authintication was completed successfully.";
-    }
-}
-
 _main();
