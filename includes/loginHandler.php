@@ -20,11 +20,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Password is correct
                 session_start();
                 $_SESSION['user_name'] = $username;
+                echo $query;
                 header("Location: ./index.html");
+                echo $query;
                 exit();
             } else {
                 // Password is incorrect
+                echo $query;
                 header("Location: ../login.php?error=invalidpassword");
+                echo $query;
                 exit();
             }
         } else {
