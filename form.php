@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="Styles/formStyle.css"/>
 </head>
 <body>
+<iframe src="master.php" frameborder="0" width="100%" height="50"></iframe>
     <h1>What's Your Favorite Animal?</h1>
     <form action="phpHandlers/formhandler.php" method="post">
         <label for="firstName">First Name:</label>

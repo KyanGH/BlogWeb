@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+<iframe src="master.php" frameborder="0" width="100%" height="50"></iframe>
     <h3>Edit user accounts</h3>
     <form action="includes/userupdate.inc.php" method="post">
     <input type="text" name="user_name" placeholder="User name">
@@ -23,11 +24,12 @@
     <input type="password" name="password" placeholder="Password">
     <button>Delete</button>
 </form>
+
 <br><br>
-
-
 <?php
+
 $j = 5;
+echo "<form action='includes/userdelete.inc.php method='post'>";
 echo "<table border='1'>";
 //Create columns
 echo "<tr>";
@@ -39,17 +41,29 @@ echo "<th>Password</th>";
 echo "<th>Email</th>";
 echo "<th>Phone number</th>";
 echo "<th>Created at</th>";
+echo "<th>Update</th>";
+echo "<th>Delete</th>";
 echo "</tr>";
 
-// Create rows for each column
+// Create rows for each user
 for ($row = 1; $row <= $j; $row++) {
     echo "<tr>";
-    for ($col = 1; $col <= 8; $col++) {
-        echo "<td>Row $row, Column $col</td>";
-    }
+    echo "<td><input type='text' id='id_$row' name='id_$row' value='$row'></td>";
+    echo "<td><input type='text' id='user_name_$row' name='username_$row' value='Dusk'></td>";
+    echo "<td><input type='text' id='first_name_$row' name='first_name_$row' value='Dusk'></td>";
+    echo "<td><input type='text' id='last_name_$row' name='last_name_$row' value='Darker'></td>";
+    echo "<td><input type='text' id='password_$row' name='password_$row' value='dusk'></td>";
+    echo "<td><input type='text' id='email_$row' name='email_$row' value='dusk@gmail.com'></td>";
+    echo "<td><input type='text' id='phone_$row' name='phone_$row' value='712312312'></td>";
+    echo "<td><input type='text' id='created_at_$row' name='created_at_$row' value='2023-10-10 12:49:07'></td>";
+    echo "<td><button type='submit' name='update_$row'>Update</button></td>";
+    echo "<td><button type='submit' name='delete_$row'>Delete</button></td>";
     echo "</tr>";
 }
 echo "</table>";
+echo "</form>";
+
+
 ?>
 </body>
 </html>

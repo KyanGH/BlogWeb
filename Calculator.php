@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="Styles/calcStyle.css"/>
 </head>
 <body>
+<iframe src="master.php" frameborder="0" width="100%" height="50"></iframe>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
     <input type="number" name="num01" placeholder="First number">
     <select name="operator">
@@ -49,7 +50,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 break;
             
             case "multi":
-                $value = $num01 * $num2;
+                $value = $num01 * $num02;
                 break;
 
             case "div":
