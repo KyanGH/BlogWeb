@@ -15,14 +15,14 @@
     <input type="text" name="email" placeholder="Email">
     <input type="password" name="password" placeholder="Password">
     <input type="text" name="phone_number" placeholder="Phone number">
-    <button>Update</button>
+    <input type="submit" name="update_button" value="Update">
 </form>
 
 <h3>Delete user accounts</h3>
     <form action="includes/userdelete.inc.php" method="post">
     <input type="text" name="user_name" placeholder="User name">
     <input type="password" name="password" placeholder="Password">
-    <button>Delete</button>
+    <input type="submit" name="delete_button" value="Delete">
 </form>
 
 <br><br>
@@ -56,14 +56,16 @@ for ($row = 1; $row <= $j; $row++) {
     echo "<td><input type='text' id='email_$row' name='email_$row' value='dusk@gmail.com'></td>";
     echo "<td><input type='text' id='phone_$row' name='phone_$row' value='712312312'></td>";
     echo "<td><input type='text' id='created_at_$row' name='created_at_$row' value='2023-10-10 12:49:07'></td>";
-    echo "<td><button type='submit' name='update_$row'>Update</button></td>";
-    echo "<td><button type='submit' name='delete_$row'>Delete</button></td>";
+    echo "<td><input type='submit' name='update_button_$row' value='Update'></td>";
+    echo "<td><input type='submit' name='delete_button_$row' value='Delete'></td>";
     echo "</tr>";
 }
 echo "</table>";
 echo "</form>";
 
-
+$query = "SELECT * FROM users";
+$stmt = $pdo->prepare($query);
+$stmt->execute();
 ?>
 </body>
 </html>

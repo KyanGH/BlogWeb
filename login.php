@@ -18,5 +18,9 @@ $_SESSION["username"] = "Dusk";
             <input type="submit" value="Login">
         </form>
     </div>
+
+    <?php
+    echo $_SESSION["username"];
+    ?>
 </body>
 </html>

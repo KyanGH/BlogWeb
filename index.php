@@ -52,5 +52,7 @@
         <p><a href="admin-panel.php"><img src="images/admin.icon.png" class="avatar-image"/></a></p>
       </pre>
     </div>
+
+    <?php echo $_SESSION["username"]; ?>
   </body>
 </html>
